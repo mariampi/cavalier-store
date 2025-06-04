@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Affiliate - Candy's Cavalier King Charles Store</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @font-face {
+      font-family: 'LucideIcons';
+      src: url(https://cdn.jsdelivr.net/npm/lucide-static@latest/font/Lucide.ttf) format('truetype');
+    }
+    .lucide {
+      font-family: 'LucideIcons';
+      font-size: 1.25rem; /* Adjust size as needed */
+      line-height: 1;
+    }
+    /* Use Inter font */
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+  </style>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="bg-white text-gray-800 flex flex-col min-h-screen">
+
+  <header class="py-4 px-6 md:px-12 lg:px-24 shadow-sm">
+    <div class="container mx-auto flex justify-between items-center">
+      <div class="flex items-center space-x-2">
+        <span class="text-xl text-pink-500">&#128062;</span>
+        <a href="index.html" class="text-lg font-semibold text-gray-900">Candy's Cavalier King Charles Store</a>
+      </div>
+      <nav class="hidden md:flex items-center space-x-6">
+        <a href="index.html" class="text-gray-600 hover:text-gray-900">Home</a>
+        <a href="shop.html" class="text-gray-600 hover:text-gray-900">Shop</a>
+        <a href="affiliate.html" class="text-gray-900 font-semibold hover:text-gray-900">Affiliate</a>
+        <a href="contact.html" class="text-gray-600 hover:text-gray-900">Contact</a>
+        <a href="#" class="text-gray-600 hover:text-gray-900">
+          <span class="lucide" aria-hidden="true">&#xe49d;</span>
+        </a>
+        <a href="#" class="text-gray-600 hover:text-gray-900">
+          <span class="lucide" aria-hidden="true">&#xe4a1;</span>
+        </a>
+        <a href="#" class="text-gray-600 hover:text-gray-900">
+          <span class="lucide" aria-hidden="true">&#xe50d;</span>
+        </a>
+      </nav>
+      <button class="md:hidden text-gray-600">
+        <span class="lucide">&#xe4af;</span>
+      </button>
+    </div>
+  </header>
+
+  <main class="flex-grow container mx-auto py-12 px-6 md:px-12 lg:px-24">
+    <h1 class="text-3xl font-semibold text-gray-900 mb-2">Recommended Products</h1>
+    <p class="text-gray-600 mb-8 max-w-xl">We've handpicked these amazing pet products that we think you'll love.</p>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+
+      <div class="bg-white rounded-lg shadow-md overflow-hidden flex flex-col">
+        <img src="https://placehold.co/400x400/f5f5f5/888?text=Dog+Collar" alt="Premium Dog Collar" class="w-full h-64 object-cover" onerror="this.src='https://placehold.co/400x400/f8f8f8/ccc?text=Image+Error'">
+        <div class="p-4 flex flex-col flex-grow">
+          <div class="flex justify-between items-start mb-2">
+            <div>
+              <h2 class="text-lg font-semibold text-gray-900">Premium Dog Collar</h2>
+              <p class="text-sm text-gray-600">Durable and stylish collar for your furry friend</p>
+            </div>
+            <p class="text-lg font-semibold text-gray-800">$24.99</p>
+          </div>
+          <div class="mt-auto">
+            <a href="#" target="_blank" rel="noopener noreferrer" class="block w-full text-center bg-indigo-600 hover:bg-indigo-700 text-white font-semibold py-2 px-4 rounded-lg shadow-md transition duration-300 mt-4">
+              View on Amazon
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-lg shadow-md overflow-hidden flex flex-col">
+        <img src="https://placehold.co/400x400/fafafa/777?text=Cat+Tree" alt="Cat Climbing Tree" class="w-full h-64 object-cover" onerror="this.src='https://placehold.co/400x400/f8f8f8/ccc?text=Image+Error'">
+        <div class="p-4 flex flex-col flex-grow">
+          <div class="flex justify-between items-start mb-2">
+            <div>
+              <h2 class="text-lg font-semibold text-gray-900">Cat Climbing Tree</h2>
+              <p class="text-sm text-gray-600">Multi-level cat tree with scratching posts</p>
+            </div>
+            <p class="text-lg font-semibold text-gray-800">$89.99</p>
+          </div>
+          <div class="mt-auto">
+            <a href="#" target="_blank" rel="noopener noreferrer" class="block w-full text-center bg-indigo-600 hover:bg-indigo-700 text-white font-semibold py-2 px-4 rounded-lg shadow-md transition duration-300 mt-4">
+              View on Amazon
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-lg shadow-md overflow-hidden flex flex-col">
+        <img src="https://placehold.co/400x400/eff6ff/60a5fa?text=Dog+Bed" alt="Comfy Dog Bed" class="w-full h-64 object-cover" onerror="this.src='https://placehold.co/400x400/f8f8f8/ccc?text=Image+Error'">
+        <div class="p-4 flex flex-col flex-grow">
+          <div class="flex justify-between items-start mb-2">
+            <div>
+              <h2 class="text-lg font-semibold text-gray-900">Comfy Dog Bed</h2>
+              <p class="text-sm text-gray-600">Orthopedic support for restful sleep</p>
+            </div>
+            <p class="text-lg font-semibold text-gray-800">$49.99</p>
+          </div>
+          <div class="mt-auto">
+            <a href="#" target="_blank" rel="noopener noreferrer" class="block w-full text-center bg-indigo-600 hover:bg-indigo-700 text-white font-semibold py-2 px-4 rounded-lg shadow-md transition duration-300 mt-4">
+              View on Amazon
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-lg shadow-md overflow-hidden flex flex-col">
+        <img src="https://placehold.co/400x400/fdf4ff/c084fc?text=Pet+Toy" alt="Interactive Pet Toy" class="w-full h-64 object-cover" onerror="this.src='https://placehold.co/400x400/f8f8f8/ccc?text=Image+Error'">
+        <div class="p-4 flex flex-col flex-grow">
+          <div class="flex justify-between items-start mb-2">
+            <div>
+              <h2 class="text-lg font-semibold text-gray-900">Interactive Pet Toy</h2>
+              <p class="text-sm text-gray-600">Keeps your pet engaged</p>
+            </div>
+            <p class="text-lg font-semibold text-gray-800">$15.99</p>
+          </div>
+          <div class="mt-auto">
+            <a href="#" target="_blank" rel="noopener noreferrer" class="block w-full text-center bg-indigo-600 hover:bg-indigo-700 text-white font-semibold py-2 px-4 rounded-lg shadow-md transition duration-300 mt-4">
+              View on Amazon
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <footer class="bg-gray-100 py-12 px-6 md:px-12 lg:px-24 text-gray-700 mt-auto">
+    <div class="container mx-auto grid grid-cols-1 md:grid-cols-4 gap-8">
+      <div class="col-span-1 md:col-span-2">
+        <div class="flex items-center space-x-2 mb-4">
+          <span class="text-xl text-pink-500">&#128062;</span>
+          <a href="index.html" class="text-lg font-semibold text-gray-900">Candy's Cavalier King Charles Store</a>
+        </div>
+        <p class="mb-4 max-w-sm">Premium Cavalier King Charles themed apparel and accessories for dog lovers.</p>
+        <div class="flex space-x-4">
+          <a href="#" class="text-gray-600 hover:text-gray-900 flex items-center space-x-1">
+            <span class="lucide" aria-hidden="true">&#xe49d;</span>
+            <span>Facebook</span>
+          </a>
+          <a href="#" class="text-gray-600 hover:text-gray-900 flex items-center space-x-1">
+            <span class="lucide" aria-hidden="true">&#xe4a1;</span>
+            <span>Instagram</span>
+          </a>
+          <a href="#" class="text-gray-600 hover:text-gray-900 flex items-center space-x-1">
+            <span class="lucide" aria-hidden="true">&#xe50d;</span>
+            <span>Twitter</span>
+          </a>
+        </div>
+      </div>
+      <div>
+        <h4 class="font-semibold text-gray-900 mb-4">SHOP</h4>
+        <ul class="space-y-2">
+          <li><a href="shop.html" class="hover:text-gray-900">All Products</a></li>
+          <li><a href="#" class="hover:text-gray-900">New Arrivals</a></li>
+          <li><a href="#" class="hover:text-gray-900">Best Sellers</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="font-semibold text-gray-900 mb-4">SUPPORT</h4>
+        <ul class="space-y-2">
+          <li><a href="contact.html" class="hover:text-gray-900">Contact Us</a></li>
+          <li><a href="#" class="hover:text-gray-900">Shipping Info</a></li>
+          <li><a href="#" class="hover:text-gray-900">Returns</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container mx-auto mt-8 pt-8 border-t border-gray-300 text-center text-sm text-gray-500">
+      &copy; 2025 Candy's Cavalier King Charles Store. All rights reserved.
+    </div>
+  </footer>
+
+</body>
+</html>
