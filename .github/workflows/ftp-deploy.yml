@@ -1,14 +1,13 @@
-name: 🚀 Deploy to FTP
+name: 🚀 FTP Deploy
 
 on:
   push:
-    branches:
-      - main
+    branches: [main]
 
 jobs:
-  ftp-deploy:
-    name: Upload via FTP
+  deploy:
     runs-on: ubuntu-latest
+
     steps:
       - name: 📂 Checkout Repo
         uses: actions/checkout@v3
@@ -20,3 +19,5 @@ jobs:
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
           server-dir: ${{ secrets.FTP_REMOTE_PATH }}/
+          protocol: ftp
+          passive: true
