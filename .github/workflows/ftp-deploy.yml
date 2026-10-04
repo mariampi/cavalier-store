@@ -1,8 +1,7 @@
-name: 🚀 FTP Deploy
+name: Legacy FTP Deploy (manual only)
 
 on:
-  push:
-    branches: [main]
+  workflow_dispatch:
 
 jobs:
   deploy:
@@ -11,7 +10,7 @@ jobs:
       - name: 📁 Checkout Repo
         uses: actions/checkout@v3
 
-      - name: 🚀 FTP Deploy
+      - name: Legacy FTP Deploy (manual only)
         uses: SamKirkland/FTP-Deploy-Action@v4.3.4
         with:
           server: ${{ secrets.FTP_SERVER }}
