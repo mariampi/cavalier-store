@@ -12,7 +12,7 @@ The previous FTP workflow is retained for manual use only; it does not run on pu
 
 ## Preview limitations
 
-- Home and Shop photos are available. Affiliate photos are pending, prices are samples, and checkout and affiliate destinations are not configured.
+- Home and Shop photos and Affiliate concept images are available. Prices are samples, and checkout and affiliate destinations are not configured.
 - Newsletter signup is not connected.
 - Contact opens an email draft using the existing address, `velocityvendmall@gmail.com`; ownership/delivery still need verification.
 - Styling, icon fonts, and web fonts currently depend on external services.
@@ -20,13 +20,13 @@ The previous FTP workflow is retained for manual use only; it does not run on pu
 
 ## Photo slots
 
-The Home and Shop slots are filled. Add the four pending Affiliate JPEGs to `images/products/`. The Affiliate page displays the local photo-pending illustration until each file is supplied. Square photos work best for these cards.
+All 11 image slots are filled in `images/products/`. The Affiliate images are AI-generated concepts. Replace them with approved photos of the selected products when affiliate destinations are ready.
 
 | Page | Status | Files |
 | --- | --- | --- |
 | Home | Available | `collection-apparel.jpg`, `collection-accessories.jpg`, `collection-home-goods.jpg` |
 | Shop | Available | `dog-mom-life-tee.jpg`, `cavalier-dad-tee.jpg`, `cavalier-love-tee.jpg`, `spaniel-style-shirt.jpg` |
-| Affiliate | Pending | `premium-dog-collar.jpg`, `small-dog-walking-harness.jpg`, `comfy-dog-bed.jpg`, `interactive-pet-toy.jpg` |
+| Affiliate | Generated concepts | `premium-dog-collar.jpg`, `small-dog-walking-harness.jpg`, `comfy-dog-bed.jpg`, `interactive-pet-toy.jpg` |
 
 ## Local preview
 

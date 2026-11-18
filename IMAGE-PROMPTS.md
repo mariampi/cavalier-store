@@ -1,3 +1,23 @@
+# Affiliate product concepts
+
+Mode: built-in image generation. The final JPEGs are in `images/products/`.
+
+### `premium-dog-collar.jpg`
+
+Use case: product-mockup. Create one square photorealistic catalog image for the Affiliate page of a Cavalier King Charles Spaniel storefront. Show a single muted sage-green woven nylon dog collar, loosely arranged in an oval with its matte brass-toned buckle and D-ring clearly visible, on warm cream linen. Use muted sage, oatmeal cream and soft indigo colors that complement a light storefront. Soft indirect daylight, realistic materials, restrained styling, centered product with generous crop-safe margin on all sides and no props competing for attention. No animals, hands, branding, lettering, watermarks or borders.
+
+### `small-dog-walking-harness.jpg`
+
+Use case: product-mockup. Create one square photorealistic catalog image for the Affiliate page of a Cavalier King Charles Spaniel storefront. Show a single muted dusty-indigo padded Y-front walking harness sized for a Cavalier King Charles Spaniel, neatly laid flat with its straps and buckles clearly arranged, on warm cream linen. Use muted sage, oatmeal cream and soft indigo colors that complement a light storefront. Soft indirect daylight, realistic materials, restrained styling, centered product with generous crop-safe margin on all sides and no props competing for attention. No animals, hands, branding, lettering, watermarks or borders.
+
+### `comfy-dog-bed.jpg`
+
+Use case: product-mockup. Create one square photorealistic catalog image for the Affiliate page of a Cavalier King Charles Spaniel storefront. Show a single cozy oatmeal-colored small dog bolster bed with soft sage-gray trim, viewed from a slightly raised three-quarter angle, on a warm cream floor with a pale sage background. Use muted sage, oatmeal cream and soft indigo colors that complement a light storefront. Soft indirect daylight, realistic materials, restrained styling, centered product with generous crop-safe margin on all sides and no props competing for attention. No animals, hands, branding, lettering, watermarks or borders.
+
+### `interactive-pet-toy.jpg`
+
+Use case: product-mockup. Create one square photorealistic catalog image for the Affiliate page of a Cavalier King Charles Spaniel storefront. Show a single small round sage-green and muted dusty-indigo dog treat puzzle with a cream base and visible sliding compartments, seen from a slightly raised three-quarter angle, on warm cream linen. Use muted sage, oatmeal cream and soft indigo colors that complement a light storefront. Soft indirect daylight, realistic materials, restrained styling, centered product with generous crop-safe margin on all sides and no props competing for attention. No animals, hands, branding, lettering, watermarks or borders.
+
 # Bright hero image edits
 
 Mode: built-in image_gen image editing. Original `hero.jpg` is retained.
