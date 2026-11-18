@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400">
+  <rect width="600" height="400" fill="#f9efe6"/>
+  <circle cx="300" cy="172" r="55" fill="#f0ddca"/>
+  <g fill="#845640">
+    <ellipse cx="276" cy="162" rx="7" ry="11" transform="rotate(-24 276 162)"/>
+    <ellipse cx="292" cy="148" rx="7" ry="11" transform="rotate(-10 292 148)"/>
+    <ellipse cx="308" cy="148" rx="7" ry="11" transform="rotate(10 308 148)"/>
+    <ellipse cx="324" cy="162" rx="7" ry="11" transform="rotate(24 324 162)"/>
+    <path d="M280 184c0-8 12-20 20-20s20 12 20 20c0 13-13 7-20 7s-20 6-20-7Z"/>
+  </g>
+  <text x="300" y="255" fill="#634435" font-family="system-ui, sans-serif" font-size="20" text-anchor="middle">Photo coming soon</text>
+</svg>

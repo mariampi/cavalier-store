@@ -12,11 +12,21 @@ The previous FTP workflow is retained for manual use only; it does not run on pu
 
 ## Preview limitations
 
-- Product images and prices are samples; checkout and affiliate destinations are not configured.
+- Product photos are pending and prices are samples. Checkout and affiliate destinations are not configured.
 - Newsletter signup is not connected.
 - Contact opens an email draft using the existing address, `velocityvendmall@gmail.com`; ownership/delivery still need verification.
-- Styling, icon fonts, web fonts, and product placeholder images currently depend on external services.
+- Styling, icon fonts, and web fonts currently depend on external services.
 - The unconfigured domain, sample phone number, and fabricated organization metadata have been removed.
+
+## Photo slots
+
+Add the following JPEGs to `images/products/`. The pages already reference these filenames and display the local photo-pending illustration until each file is supplied. Use landscape photos for collections and square photos for product cards.
+
+| Page | Files needed |
+| --- | --- |
+| Home | `collection-apparel.jpg`, `collection-accessories.jpg`, `collection-home-goods.jpg` |
+| Shop | `dog-mom-life-tee.jpg`, `cavalier-dad-tee.jpg`, `cavalier-love-tee.jpg`, `spaniel-style-shirt.jpg` |
+| Affiliate | `premium-dog-collar.jpg`, `small-dog-walking-harness.jpg`, `comfy-dog-bed.jpg`, `interactive-pet-toy.jpg` |
 
 ## Local preview
 
