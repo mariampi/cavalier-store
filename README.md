@@ -12,7 +12,7 @@ The previous FTP workflow is retained for manual use only; it does not run on pu
 
 ## Preview limitations
 
-- Product photos are pending and prices are samples. Checkout and affiliate destinations are not configured.
+- Home and Shop photos are available. Affiliate photos are pending, prices are samples, and checkout and affiliate destinations are not configured.
 - Newsletter signup is not connected.
 - Contact opens an email draft using the existing address, `velocityvendmall@gmail.com`; ownership/delivery still need verification.
 - Styling, icon fonts, and web fonts currently depend on external services.
@@ -20,13 +20,13 @@ The previous FTP workflow is retained for manual use only; it does not run on pu
 
 ## Photo slots
 
-Add the following JPEGs to `images/products/`. The pages already reference these filenames and display the local photo-pending illustration until each file is supplied. Use landscape photos for collections and square photos for product cards.
+The Home and Shop slots are filled. Add the four pending Affiliate JPEGs to `images/products/`. The Affiliate page displays the local photo-pending illustration until each file is supplied. Square photos work best for these cards.
 
-| Page | Files needed |
-| --- | --- |
-| Home | `collection-apparel.jpg`, `collection-accessories.jpg`, `collection-home-goods.jpg` |
-| Shop | `dog-mom-life-tee.jpg`, `cavalier-dad-tee.jpg`, `cavalier-love-tee.jpg`, `spaniel-style-shirt.jpg` |
-| Affiliate | `premium-dog-collar.jpg`, `small-dog-walking-harness.jpg`, `comfy-dog-bed.jpg`, `interactive-pet-toy.jpg` |
+| Page | Status | Files |
+| --- | --- | --- |
+| Home | Available | `collection-apparel.jpg`, `collection-accessories.jpg`, `collection-home-goods.jpg` |
+| Shop | Available | `dog-mom-life-tee.jpg`, `cavalier-dad-tee.jpg`, `cavalier-love-tee.jpg`, `spaniel-style-shirt.jpg` |
+| Affiliate | Pending | `premium-dog-collar.jpg`, `small-dog-walking-harness.jpg`, `comfy-dog-bed.jpg`, `interactive-pet-toy.jpg` |
 
 ## Local preview
 
