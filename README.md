@@ -14,7 +14,7 @@ The previous FTP workflow is retained for manual use only; it does not run on pu
 
 - Home and Shop photos and Affiliate concept images are available. Prices are samples, and checkout and affiliate destinations are not configured.
 - Newsletter signup is not connected.
-- Contact opens an email draft using the existing address, `velocityvendmall@gmail.com`; ownership/delivery still need verification.
+- Contact opens an email draft addressed to `hello@candyscavaliers.com`.
 - Styling, icon fonts, and web fonts currently depend on external services.
 - The sample phone number and fabricated organization metadata have been removed.
 
