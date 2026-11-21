@@ -12,7 +12,7 @@ The previous FTP workflow is retained for manual use only; it does not run on pu
 
 ## Preview limitations
 
-- Home and Shop photos and Affiliate concept images are available. Prices are samples, and checkout and affiliate destinations are not configured.
+- Shop prices are samples, and store checkout is not configured. The Affiliate page links to Amazon for current pricing and availability.
 - Newsletter signup is not connected.
 - Contact opens an email draft addressed to `hello@candyscavaliers.com`.
 - Styling, icon fonts, and web fonts currently depend on external services.
@@ -20,13 +20,13 @@ The previous FTP workflow is retained for manual use only; it does not run on pu
 
 ## Photo slots
 
-All 11 image slots are filled in `images/products/`. The Affiliate images are AI-generated concepts. Replace them with approved photos of the selected products when affiliate destinations are ready.
+Home and Shop photos are in `images/products/`. The earlier Affiliate concept images are retained in the repository. The live Affiliate cards use text until photos of the specific products are available.
 
 | Page | Status | Files |
 | --- | --- | --- |
 | Home | Available | `collection-apparel.jpg`, `collection-accessories.jpg`, `collection-home-goods.jpg` |
 | Shop | Available | `dog-mom-life-tee.jpg`, `cavalier-dad-tee.jpg`, `cavalier-love-tee.jpg`, `spaniel-style-shirt.jpg` |
-| Affiliate | Generated concepts | `premium-dog-collar.jpg`, `small-dog-walking-harness.jpg`, `comfy-dog-bed.jpg`, `interactive-pet-toy.jpg` |
+| Affiliate | Unused concepts | `premium-dog-collar.jpg`, `small-dog-walking-harness.jpg`, `comfy-dog-bed.jpg`, `interactive-pet-toy.jpg` |
 
 ## Local preview
 
