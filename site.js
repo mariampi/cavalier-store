@@ -71,3 +71,37 @@ async function loadLatestJournalPost(teaser) {
 
 const latestJournalPost = document.getElementById('latest-journal-post');
 if (latestJournalPost) loadLatestJournalPost(latestJournalPost);
+
+const productZoomTrigger = document.getElementById('product-zoom-trigger');
+const productZoomDialog = document.getElementById('product-zoom-dialog');
+if (productZoomTrigger && typeof productZoomDialog?.showModal === 'function') {
+  const viewport = document.getElementById('product-zoom-viewport');
+  const photo = document.getElementById('product-zoom-photo');
+  const level = document.getElementById('product-zoom-level');
+  const value = document.getElementById('product-zoom-value');
+
+  productZoomTrigger.setAttribute('aria-haspopup', 'dialog');
+  productZoomTrigger.addEventListener('click', (event) => {
+    if (event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
+    event.preventDefault();
+    level.value = '1';
+    photo.style.width = '100%';
+    level.setAttribute('aria-valuetext', '1×');
+    value.value = '1×';
+    productZoomDialog.showModal();
+    viewport.scrollTo(0, 0);
+  });
+
+  level.addEventListener('input', () => {
+    const centerX = (viewport.scrollLeft + viewport.clientWidth / 2) / photo.offsetWidth;
+    const centerY = (viewport.scrollTop + viewport.clientHeight / 2) / photo.offsetHeight;
+    photo.style.width = `${Number(level.value) * 100}%`;
+    const zoomText = `${level.value}×`;
+    level.setAttribute('aria-valuetext', zoomText);
+    value.value = zoomText;
+    viewport.scrollTo(
+      centerX * photo.offsetWidth - viewport.clientWidth / 2,
+      centerY * photo.offsetHeight - viewport.clientHeight / 2
+    );
+  });
+}
