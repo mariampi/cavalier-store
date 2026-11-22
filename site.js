@@ -72,27 +72,47 @@ async function loadLatestJournalPost(teaser) {
 const latestJournalPost = document.getElementById('latest-journal-post');
 if (latestJournalPost) loadLatestJournalPost(latestJournalPost);
 
-const productZoomTrigger = document.getElementById('product-zoom-trigger');
-const productZoomDialog = document.getElementById('product-zoom-dialog');
-if (productZoomTrigger && typeof productZoomDialog?.showModal === 'function') {
-  const viewport = document.getElementById('product-zoom-viewport');
-  const photo = document.getElementById('product-zoom-photo');
-  const level = document.getElementById('product-zoom-level');
-  const value = document.getElementById('product-zoom-value');
+const photoZoomDialog = document.getElementById('photo-zoom-dialog');
+if (typeof photoZoomDialog?.showModal === 'function') {
+  const viewport = document.getElementById('photo-zoom-viewport');
+  const level = document.getElementById('photo-zoom-level');
+  const value = document.getElementById('photo-zoom-value');
+  const photo = document.createElement('img');
+  photo.className = 'block h-auto w-full max-w-none';
 
-  productZoomTrigger.setAttribute('aria-haspopup', 'dialog');
-  productZoomTrigger.addEventListener('click', (event) => {
-    if (event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
-    event.preventDefault();
-    level.value = '1';
-    photo.style.width = '100%';
-    level.setAttribute('aria-valuetext', '1×');
-    value.value = '1×';
-    productZoomDialog.showModal();
-    viewport.scrollTo(0, 0);
-  });
+  const journalTrigger = document.getElementById('journal-photo-zoom-trigger');
+  if (journalTrigger) {
+    for (const image of document.querySelectorAll('#journal-posts article img[src]')) {
+      const trigger = journalTrigger.content.firstElementChild.cloneNode(true);
+      trigger.href = image.src;
+      trigger.setAttribute('aria-label', 'Enlarge photo: ' + image.alt);
+      image.before(trigger);
+      trigger.prepend(image);
+    }
+  }
+
+  for (const trigger of document.querySelectorAll('[data-photo-zoom]')) {
+    const source = trigger.querySelector('img');
+    trigger.setAttribute('aria-haspopup', 'dialog');
+    trigger.addEventListener('click', (event) => {
+      if (event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
+      event.preventDefault();
+      photo.alt = source.alt;
+      photo.width = source.naturalWidth || Number(source.getAttribute('width'));
+      photo.height = source.naturalHeight || Number(source.getAttribute('height'));
+      photo.src = trigger.href;
+      photo.style.width = '100%';
+      viewport.replaceChildren(photo);
+      level.value = '1';
+      level.setAttribute('aria-valuetext', '1×');
+      value.value = '1×';
+      photoZoomDialog.showModal();
+      viewport.scrollTo(0, 0);
+    });
+  }
 
   level.addEventListener('input', () => {
+    if (!photo.offsetWidth || !photo.offsetHeight) return;
     const centerX = (viewport.scrollLeft + viewport.clientWidth / 2) / photo.offsetWidth;
     const centerY = (viewport.scrollTop + viewport.clientHeight / 2) / photo.offsetHeight;
     photo.style.width = `${Number(level.value) * 100}%`;
